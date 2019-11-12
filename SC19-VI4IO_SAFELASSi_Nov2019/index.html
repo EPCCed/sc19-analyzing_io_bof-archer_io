@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Analysis of I/O usage on the ARCHER UK National Supercomputing Service</title>
+		<title>Research community I/O patterns on ARCHER</title>
 
 		<link rel="stylesheet" href="../css/reveal.css">
 		<link rel="stylesheet" href="../css/theme/white.css">
@@ -28,8 +28,9 @@
 
 <!-- Start of presentation ------------------------------------------------------------------------ -->
 <section>
-	<h1>I/O usage on ARCHER</h1>
-	<p>Andy Turner, EPCC<br/>
+	<h1>Research community I/O patterns</h1>
+	<p>Gordon Gibb, Andy Turner, EPCC<br/>
+	<a href="mailto:g.gibb@epcc.ed.ac.uk">g.gibb@epcc.ed.ac.uk</a>,
 	<a href="mailto:a.turner@epcc.ed.ac.uk">a.turner@epcc.ed.ac.uk</a></p>
 	<img class="plain" src="../img/epcc_logo.png" />
 </section>
@@ -60,7 +61,7 @@
 			<li><strong>EPCC:</strong> Dominic Sloan-Murphy, David Henty, Alan Simpson</li>
 			<li><strong>Cray:</strong> Karthee Sivalingam, Harvey Richardson</li>
 			<li><strong>University of Reading:</strong> Julian Kunkel</li>
-			<li><strong>ARCHER Funding:</strong> EPSRC and NERC</li>
+			<li><strong>ARCHER Funding:</strong> UKRI: EPSRC and NERC</li>
 		</ul>
 	</section>
 
@@ -98,7 +99,7 @@
 	<section>
 		<h3>Service</h3>
 		<hr/>
-		<p>High-level IO mertics assessed statistically across the service</p>
+		<p>High-level IO metrics assessed statistically across the service</p>
 		<ul>
 			<li>Overall view of IO usage of the service</li>
 			<li>Better understanding of IO requirements of different user groups</li>
@@ -124,11 +125,11 @@
 			<li>No or little impact on job performance</li>
 			<li>Ability to examine particular jobs in more detail if required</li>
 		</ul>
-		<p>Cray LASSi tool meets these requirements (see talk from Karthee later today)</p>
+		<p>Cray LASSi tool meets these requirements</p>
 	</section>
 
 	<section>
-		<h3>Reporting and Anaysis</h3>
+		<h3>Reporting and Analysis</h3>
 		<hr/>
 		<ul>
 			<li>Provide reporting interface to users to inspect IO metrics</li>
@@ -176,32 +177,9 @@
 	</section>
 
 	<section>
-		<h3>Overall Read Rates</h3>
-		<hr/>
-		<img class="plain" height="500" src="img_local/read_full.png" alt="Overall read rate over period" />
-	</section>
-
-	<section>
-		<h3>Overall Write Rates</h3>
-		<hr/>
-		<img class="plain" height="500" src="img_local/write_full.png" alt="Overall write rate over period" />
-	</section>
-
-	<section>
-		<h3>Overall Write Rates (zoomed)</h3>
-		<hr/>
-		<img class="plain" height="500" src="img_local/write_zoom.png" alt="Overall write rate over period" />
-	</section>
-
-	<section>
 		<h3>Overall I/O distribution (by data)</h3>
 		<hr/>
 		<img class="plain" height="500" src="img_local/io_3Q4Q2018_use_all.png" alt="I/O distribution by data size and job size" />
-	</section>
-	<section>
-		<h3>Overall I/O distribution (by rate)</h3>
-		<hr/>
-		<img class="plain" height="500" src="img_local/io_3Q4Q2018_rate_all.png" alt="I/O distribution by data size and job size" />
 	</section>
 	<section>
 		<h3>I/O distribution: Materials Science</h3>
@@ -265,9 +243,18 @@
 	<hr/>
 	<ul>
 		<li>Combination of LASSi and SAFE provides a powerful tool for analysing IO use on national HPC service</li>
-		<li>Initial analysis has identified a small number of IO workflow patterns that dominate the use of the service</li>
-		<li>Mean rates and total data metrics are strongly correlated due to consistent length of jobs</li>
-		<li>Lots of work still to do!</li>
+		<li>Initial analysis has identified a small number of IO workflow patterns that dominate the use of the service
+			<ul>
+				<li>Possibly missing use patterns that are novel/different but who do not use large amounts of CPU resource&hellip;</li>
+				<li>&hellip;but may use a lot of IO resource.</li>
+			</ul>
+		</li>
+		<li>Lots of work still to do!
+			<ul>
+				<li>Find other HPC sites to compare data too (who else is collecting statistical data like this?</li>
+				<li>Look at different aspects of the statistics</li>
+			</ul>
+		</li>
 	</ul>
 </section>
 
